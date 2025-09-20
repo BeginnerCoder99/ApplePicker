@@ -38,6 +38,9 @@ public class ApplePicker : MonoBehaviour
         GameObject[] appleArray = GameObject.FindGameObjectsWithTag("Apple");
         foreach (GameObject tempGo in appleArray)
         { Destroy(tempGo); }
+        GameObject[] stickArray = GameObject.FindGameObjectsWithTag("Stick");
+        foreach (GameObject tempGo in stickArray)
+        { Destroy(tempGo); }
 
         int basketIndex = basketList.Count - 1;
         GameObject basketGO = basketList[basketIndex];
